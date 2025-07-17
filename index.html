@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cineminha Thais & Juan</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <div class="overlay"></div>
+
+  <div class="content">
+    <h1>Cineminha Thais & Juan 🎬❤️</h1>
+    <p class="subtitle">Sessão VIP</p>
+    <p class="details">Direito a beijos ilimitados, cafunés infinitos e massagens para te relaxar ❤️</p>
+
+    <h2>🍔 Menu de hoje</h2>
+    <ul>
+      <li>Porção de salgados</li>
+      <li>Refrigerante geladinho</li>
+      <li>Chocolate ou doce surpresa</li>
+    </ul>
+
+    <form>
+      <label for="ideia">Tem outra ideia do que comer hoje?</label><br>
+      <input type="text" id="ideia" name="ideia" placeholder="Digite aqui sua sugestão"><br>
+      <button type="submit">Enviar sugestão</button>
+    </form>
+
+    <button class="iniciar">🎬 Iniciar Sessão</button>
+
+    <!-- Bloco de indicações de filmes -->
+    <div id="filmes" class="hidden">
+      <h2>🎭 Comédias de animes e filme</h2>
+      <ul>
+        <li>Bacstreet girls</li>
+        <li>Tougen Anki</li>
+        <li>Los langeles Lakers X One Piece</li>
+        <li>Um Tira da pesada</li>
+        
+      </ul>
+
+      <h2>👻 Terror</h2>
+      <ul>
+        <li>19º andar</li>
+        <li>o banho do diabo!</li>
+        <li>faça ela voltar</li>
+        <li>C.R.I.T.U.R.A.V.O.R</li>
+        <li>Jalan Pulang</li>
+      </ul>
+    </div>
+
+    <div class="motivacao">
+      <p>“Meu amor eu tenho orgulho de vc, te acho incrivel, e um Homem incrivel também merece relaxar!.”</p>
+    </div>
+
+  </div>
+
+  <footer>
+    <p>Feito por Thais | Para o melhor namorado do mundo Juan ❤️</p>
+  </footer>
+
+  <!-- JavaScript -->
+  <script>
+    const botaoIniciar = document.querySelector(".iniciar");
+    const filmesDiv = document.getElementById("filmes");
+
+    botaoIniciar.addEventListener("click", () => {
+      filmesDiv.classList.toggle("hidden");
+    });
+  </script>
+
+</body>
+</html>
